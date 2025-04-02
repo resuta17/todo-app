@@ -46,9 +46,9 @@ const removeTodo = (index) => {
             class="object-cover w-full max-w-xl mb-6 border border-white rounded"
           >
 
-          <h3 class="w-full max-w-xl mb-6 text-4xl font-bold text-left text-white">
+          <p class="w-full max-w-xl mt-5 mb-2 text-3xl font-bold text-left text-white">
             TODO
-          </h3>
+          </p>
 
           <div class="flex items-center w-full max-w-xl space-x-4">
             <input
@@ -77,7 +77,7 @@ const removeTodo = (index) => {
             >
               <div class="w-full">
                 <div class="flex items-center w-full font-bold">
-                  <label class="flex-1 text-left">Todo# {{ item.id }}</label>
+                  <label class="flex-1 text-left">TODO# {{ item.id }}</label>
                   <button
                     @click="removeTodo(index)"
                     class="px-2 py-1 ml-auto text-white rounded"
@@ -111,8 +111,8 @@ const removeTodo = (index) => {
                 <hr class="mt-2 border-t-2 border-gray-300">
             </div>
             </div>
-        </div>
-        <div v-else class="mt-2 border border-white rounded-md text-white p-2 max-h-[400px] overflow-auto">
+          </div>
+          <div v-else class="mt-2 border border-white rounded-md text-white p-2 max-h-[400px] overflow-auto">
             <p class="text-center">Nothing to Display.</p>
           </div>
       </div>
